@@ -1,0 +1,9 @@
+
+# 키보드 키 반복 속도 가장 빠르게
+defaults write -g InitialKeyRepeat -int 15 # normal minimum is 15 (225 ms)
+
+# 키보드 반복 지연 시간 속도 가장 빠르게
+defaults write -g KeyRepeat -int 2 # normal minimum is 2 (30 ms)
+
+# dock에 갖다대자마자 바로 올리기
+defaults write com.apple.dock autohide -bool true && defaults write com.apple.dock autohide-delay -float 0 && defaults write com.apple.dock autohide-time-modifier -float 0 && killall Dock
